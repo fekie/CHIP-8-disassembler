@@ -3,7 +3,7 @@ CFLAGS := -Wall
 
 default: all
 
-all: format compile test
+all: format compile-release test
 
 lint:
 	@find . -type f \( -iname "*.h" -or -iname "*.c" \) | xargs clang-format -i -n -Werror
